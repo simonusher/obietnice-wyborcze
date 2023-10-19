@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0; /* this will be updated using JS */
+    background: #0077cc;
+    transition: width 0.3s ease-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}

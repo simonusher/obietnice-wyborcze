@@ -1,0 +1,51 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50; /* Green color for progress */
+  width: 0; /* Initial width, will be set by React's inline style */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #e0e0e0;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: center; /* Centers content horizontally */
+  vertical-align: middle; /* Centers content vertically */
+}
+
+th {
+  background-color: #f7f7f7;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+

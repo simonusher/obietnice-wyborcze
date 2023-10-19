@@ -1,0 +1,3 @@
+regex
+PyPDF2
+jupyter
