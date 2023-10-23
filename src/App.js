@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+
 
 
 import Table from '@mui/material/Table';
@@ -14,14 +17,22 @@ import { LinearProgress } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
+const TABS = [
+  {"name": "100 Konkretów KO", "data": "data.json"},
+  {"name": "Program Wyborczy Lewicy", "data": "data.json"},
+]
+
 const theme = createTheme();
 
 function App() {
     const [data, setData] = useState({});
     const [progress, setProgress] = useState(0);
+    const [activeTab, setActiveTab] = useState(0);
+
 
     useEffect(() => {
-        fetch('data.json')
+      const jsonData = TABS[activeTab].data;
+        fetch(jsonData)
             .then(response => response.json())
             .then(data => {
                 setData(data);
@@ -30,12 +41,15 @@ function App() {
                 setProgress((fulfilledPromises / totalPromises) * 100);
             })
             .catch(error => console.error('Error fetching the JSON data:', error));
-    }, []);
+    }, [activeTab]);
 
     const children = (
         <div className="App">
+            <Tabs value={activeTab} onChange={(_, newValue) => setActiveTab(newValue)} centered>
+              {TABS.map((tab, index) => <Tab key={index} label={tab.name} />)}
+            </Tabs>
             <header>
-                <h1>100 Konkretów KO</h1>
+                <h1>{TABS[activeTab].name}</h1>
                 <h2>Spełnione w {progress.toFixed(1)}%</h2>
             </header>
             <LinearProgress variant="determinate" value={progress} 
