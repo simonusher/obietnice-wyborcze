@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/obietnice-wyborcze/static/css/main.0e2eb943.css",
-    "main.js": "/obietnice-wyborcze/static/js/main.eeef6fa7.js",
-    "static/js/787.4728c262.chunk.js": "/obietnice-wyborcze/static/js/787.4728c262.chunk.js",
+    "main.js": "/obietnice-wyborcze/static/js/main.b3982bd3.js",
+    "static/js/787.19e4eaf6.chunk.js": "/obietnice-wyborcze/static/js/787.19e4eaf6.chunk.js",
     "index.html": "/obietnice-wyborcze/index.html",
     "main.0e2eb943.css.map": "/obietnice-wyborcze/static/css/main.0e2eb943.css.map",
-    "main.eeef6fa7.js.map": "/obietnice-wyborcze/static/js/main.eeef6fa7.js.map",
-    "787.4728c262.chunk.js.map": "/obietnice-wyborcze/static/js/787.4728c262.chunk.js.map"
+    "main.b3982bd3.js.map": "/obietnice-wyborcze/static/js/main.b3982bd3.js.map",
+    "787.19e4eaf6.chunk.js.map": "/obietnice-wyborcze/static/js/787.19e4eaf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e2eb943.css",
-    "static/js/main.eeef6fa7.js"
+    "static/js/main.b3982bd3.js"
   ]
 }
