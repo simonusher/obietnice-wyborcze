@@ -16,37 +16,6 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const theme = createTheme();
 
-// function PromiseTable(data) {
-//     return (
-//       <TableContainer component={Paper}>
-//         <Table>
-//           <TableHead>
-//             <TableRow>
-//               <TableCell align="center">Kategoria</TableCell>
-//               <TableCell align="center">Konkret</TableCell>
-//               <TableCell align="center">Spełnione?</TableCell>
-//             </TableRow>
-//           </TableHead>
-//           <TableBody>
-//           {Object.entries(data).map(([category, promises]) => 
-//                     promises.map((promise, index) => (
-//                         <TableRow
-//                         key={promise.promise}
-//                         // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-//                     >
-//                         <TableCell align="center" component="th" scope="row">{index === 0 ? category : ''}</TableCell>
-//                         <TableCell align="center">{promise.promise}</TableCell>
-//                         <TableCell align="center">{promise.fulfilled ? '✅' : '❌'}</TableCell>
-//                     </TableRow>
-//                     ))
-//         )}
-//           </TableBody>
-//         </Table>
-//       </TableContainer>
-//     );
-//   }
-
-
 function App() {
     const [data, setData] = useState({});
     const [progress, setProgress] = useState(0);
@@ -89,7 +58,6 @@ function App() {
                     promises.map((promise, index) => (
                         <TableRow
                         key={promise.promise}
-                        // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <TableCell align="center" component="th" scope="row">{index === 0 ? category : ''}</TableCell>
                         <TableCell align="center">{promise.promise}</TableCell>
